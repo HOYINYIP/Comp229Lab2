@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- this is the content of Contact page -->
+<html lang="en">
+
+    <body style="height:2000px">
+        <div class="container" id="contact">
+
+            <div>
+            <p>Please contact me by email to <b>hyip9@my.centennialcollege.ca</b>
+                <br/>
+               Or you can leave me a contact and message and I will be in touch with you soon!
+
+            </p>
+<!-- build Contact message box, after clicking the submit button it will go the home page of the website -->
+            <form action="/home">
+                 <!-- Name input box -->
+                <div class="contact_name">
+                    <label for="contacts-name">Name: <em></em></label>
+                    <input type="text" placeholder="Please entre Name">
+                </div>
+                <!-- Email input box -->
+                <div class="contact_email">
+                    <label for="contacts-email">Email: <em></em></label>
+                    <input type="text" placeholder="Please entre E-mail">
+                </div>
+                <!-- message subject input box -->
+                <div class="contact_subject">
+                    <label for="contacts-subject">Subject:</label>
+                    <input type="text" placeholder="Please entre subject">
+                </div>
+                <!-- submition buttom -->
+                <div class="submit_button"> 
+                    <input type= "submit" vaule="Submit">
+                </div>
+
+            </form>
+            
+        <!-- use textarea to create a message box for visitor leaving message feedback -->
+            <div class="contact_message">
+                <label for="contacts-message">Message:</label>
+                <textarea class="form-control" id="contacts-message" rows="20" name="message"></textarea>
+            </div>
+            
+            </div>
+            
+        </div>
+    
+    </body>
+</html>
+ 

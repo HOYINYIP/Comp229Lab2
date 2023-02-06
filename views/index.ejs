@@ -1,20 +1,86 @@
-<%- include partials/header.ejs %>
+ <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
-  
+   
 
   <!-- Main Content -->
   <main class="container">
+    <!-- Putting Logo in the centre of each page -->
+    <div style="text-align: center;"><img src="YHY.png" width="100" alt="Logo" /></div>
+    
+    
     <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+
+    
+      <%if(title == "Home") {%>
+       
+       <h1 class="display-4"><b>Welcome to the my Profile Webpage</b></h1>
+
+       <%}%>
       
+      <%if(title == "About me") {%>
+       
+        <h1 class="display-4"><b><%= title %></b></h1>
+ 
+      <%}%>
+
+      <%if(title == "Projects") {%>
+       
+        <h1 class="display-4"><b><%= title %></b></h1>
+ 
+      <%}%>
+
+      <%if(title == "Services") {%>
+       
+        <h1 class="display-4"><b><%= title %></b></h1>
+ 
+      <%}%>
+
+      <%if(title == "Contact") {%>
+       
+        <h1 class="display-4"><b><%= title %></b></h1>
+ 
+      <%}%>
+      
+      
+    
     </div>
+
+    <!-- redirect to the corresponding ejs file -->
+    <% if(title == "Home") {%>
+      <br/>
+    <% include partials/home%>
+    <% } %>
+    
+    <% if(title == "About me") {%>
+      <br/>
+    <% include partials/about%>
+    <% } %>
+
+    <% if(title == "Services") {%>
+      <br/>
+    <% include partials/services%>
+    <% } %>
+
+    <% if(title == "Projects") {%>
+      <br/>
+    <% include partials/projects%>
+    <% } %>
+
+    <% if(title == "Contact") {%>
+      <br/>
+    <% include partials/contact%>
+    <% } %>
+
+
   </main>
   
+
+
 <%- include partials/bottom_nav.ejs %>  
 
 <%- include partials/footer.ejs %>
-  
+
 
 
 

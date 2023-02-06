@@ -1,1 +1,59 @@
 /* custom css goes here */
+.profile {
+
+display:flex;
+flex-wrap:warp;
+flex-direction: column;
+height: 250px;
+justify-content: center;
+align-content: center;
+
+
+
+}
+
+
+#profile-name{
+    
+    color: brown;
+}
+
+.container_s{
+    display: flex;
+}
+
+.container_p{
+    display: flex;
+    flex-wrap:wrap;
+    height:1000px;
+}
+
+
+
+.box-p1{
+    display: flex;
+    flex:1;
+    border:1px solid;
+}
+
+.box-p2{
+    display: flex;
+    flex:1;
+    border:1px solid;
+}
+
+.box-p3{
+    display: flex;
+    flex:1;
+    border:1px solid;
+}
+
+
+.homephoto{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
