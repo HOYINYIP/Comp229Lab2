@@ -3,7 +3,7 @@
     
     
     <!-- input Logo -->
-    <span><img src="YHY.png" width="50"/></span>
+    
     
     <pre>    </pre>
 
@@ -47,6 +47,15 @@
           <a class="nav-link" href="/projects"><i class="fab fa-elementor"></i> Projects </a>
         </li>
         
+        <!-- Business Contacts navigation-->  
+        <% if (title == "Business Contacts") { %>
+          <li class="nav-item active">
+          <% } else  { %>
+          <li class="nav-item">
+          <% } %>
+            <a class="nav-link" href="/contact-list"><i class="fas fa-scroll"></i> Business Contacts</a>
+          </li>
+
         <!-- Services navigation-->  
         <% if (title == "Services") { %>
         <li class="nav-item active">
@@ -64,5 +73,18 @@
         <% } %>
           <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
         </li>
+        
+        <% if(typeof displayName == 'string' && displayName) { %>
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Hi, <%= displayName %></li>
+          <li class="nav-item"><a href="/" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+        <% } else { %>
+          <li class="nav-item"><a href="/login" class="nav-link">
+            <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+        <% } %>
+
+        
+
+
     </div>
   </nav>
